@@ -1,0 +1,45 @@
+ActsAsAssetDispatcher
+=====================
+
+This system consists of two parts:
+
+# AssetDispatcher
+  
+Given url that especifies the image and transformations and returns that image transformed
+
+# Module acts_as_asset
+
+This module consists on a system to store files. There are three places:
+
+## Assets folder
+
+This folder stores original files. All these files must be saved with a backup system so they are original files
+
+### Assets images
+
+Contains the original photo files
+
+### Assets watermarks
+
+Contains the original watermarks files
+
+## Container folder
+
+This folder stores transformed images this files can be removed at any time, they are cache files to speed serving transformed files
+
+### Images container
+
+This folder contains all image transformations served
+
+### Watermarks folder
+
+This folder contains all watermarks transformations served: files stored are simple images or image text files
+
+
+Example
+=======
+
+rails g asset::install
+
+
+Copyright (c) 2010 Ricard Forniol Agustí, released under the MIT license

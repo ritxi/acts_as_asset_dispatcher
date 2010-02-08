@@ -1,0 +1,4 @@
+# ActsAsAssetDispatcher
+module ActsAsAssetDispatcher
+  
+end
