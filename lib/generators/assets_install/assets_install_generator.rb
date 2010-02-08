@@ -4,14 +4,14 @@ class AssetsInstallGenerator < Rails::Generators::Base
   
   def create_base_folders
 
-    path_assets = 'Assets'
-    path_assets_images = File.join(path_assets,'Images')
-    path_assets_watermarks = File.join(path_assets,'Watermarks')
-    path_container = 'Container'
-    path_container_images = File.join(path_container,'Images')
-    path_container_watermarks = File.join(path_container,'Watermarks')
-    path_container_watermarks_images = File.join(path_container_watermarks,'Images')
-    path_container_watermarks_text = File.join(path_container_watermarks,'Text')
+    path_assets = 'assets'
+    path_assets_images = File.join(path_assets,'images')
+    path_assets_watermarks = File.join(path_assets,'watermarks')
+    path_container = 'container'
+    path_container_images = File.join(path_container,'images')
+    path_container_watermarks = File.join(path_container,'watermarks')
+    path_container_watermarks_images = File.join(path_container_watermarks,'images')
+    path_container_watermarks_text = File.join(path_container_watermarks,'text')
     empty_directory path_assets_images
     empty_directory path_assets_watermarks
     empty_directory path_container_images

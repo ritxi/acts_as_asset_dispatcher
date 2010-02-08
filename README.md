@@ -1,3 +1,5 @@
+Attention: This project has just born so it's not usable yet.
+
 ActsAsAssetDispatcher
 =====================
 
@@ -35,6 +37,28 @@ This folder contains all image transformations served
 
 This folder contains all watermarks transformations served: files stored are simple images or image text files
 
+Transformations
+===============
+
+#Available Transformations
+
+  resize(width, height)
+  crop(width, height, x, y)
+  watermark(watermark_name, POSITION)
+  text(text, font_options, POSITION)
+  scale({:width || :height})
+  
+#Available POSITIONS
+    
+    TopCenter     == Top
+    TopRight
+    TopLeft
+    BottomCenter  == Bottom
+    BottomRight
+    BottomLeft
+    MiddleCenter  == Middle
+    MiddleRight
+    MiddleLeft
 
 Example
 =======
